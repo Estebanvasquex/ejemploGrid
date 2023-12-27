@@ -1,4 +1,4 @@
-[
+export let data =  [
     {
         "id": 2,
         "codigo_predio": 236440,
@@ -74480,3 +74480,4 @@
         "tamano_predios": 0
     }
 ]
+

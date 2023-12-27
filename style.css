@@ -1,9 +1,4 @@
-.grid-container{
-border: 2px solid black;
-width: 90vw;
-height: 80vh;
-background-color: #e60000;
-}
+
 
 body{
     background-color: #f2f2f2;
@@ -19,17 +14,13 @@ h1{
     
 }
 
-.footerGrid {
-    background-color: rgba(124,201,255,0.1) !important;
-    color: #0093FF !important;
-    position: relative;
-    width: 10% !important;
-    height: 20% !important;
-}
+.grid-container {
+    border: 2px solid black;
+    width: 90vw;
+    height: 80vh;
+    background-color: #e60000;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
 
-.prueba{
-    height: 20%;
-    width: 100%;
-    background-color: aqua;
-
-}
