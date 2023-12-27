@@ -1,0 +1,35 @@
+.grid-container{
+border: 2px solid black;
+width: 90vw;
+height: 80vh;
+background-color: #e60000;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #a66c6c;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.footerGrid {
+    background-color: rgba(124,201,255,0.1) !important;
+    color: #0093FF !important;
+    position: relative;
+    width: 10% !important;
+    height: 20% !important;
+}
+
+.prueba{
+    height: 20%;
+    width: 100%;
+    background-color: aqua;
+
+}
