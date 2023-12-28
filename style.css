@@ -18,8 +18,7 @@ h1{
     border: 2px solid black;
     width: 90vw;
     height: 80vh;
-    background-color: #e60000;
-    overflow: auto;
+    background-color: #f8dfdf;
     display: flex;
     flex-direction: column;
   }

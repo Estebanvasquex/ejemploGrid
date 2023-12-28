@@ -12,9 +12,17 @@ var datos_finales = data
         $("#grid").jqGrid({
           datatype: 'local',
           data: data,
+          colNames: [
+            "parametrosCapturaFichaPredialacciones",
+            "parametrosCapturaFichaPredialcabecera", "parametrosCapturaFichaPredialcabecera", "parametrosCapturaFichaPredialcabecera", "parametrosCapturaFichaPredialcabecera4", "parametrosCapturaFichaPredialcabecera5",
+            "parametrosCapturaFichaPredialcabecera6", "parametrosCapturaFichaPredialcabecera7", "parametrosCapturaFichaPredialcabecera8", "parametrosCapturaFichaPredialcabecera9", "parametrosCapturaFichaPredialcabecera10",
+            "parametrosCapturaFichaPredialcabecera11", "parametrosCapturaFichaPredialcabecera12", "parametrosCapturaFichaPredialcabecera13", "parametrosCapturaFichaPredialcabecera14", "parametrosCapturaFichaPredialcabecera15",
+            "parametrosCapturaFichaPredialcabecera16", "parametrosCapturaFichaPredialcabecera17", "parametrosCapturaFichaPredialcabecera18", "parametrosCapturaFichaPredialcabecera19", "arametrosCapturaFichaPredialcabecera20",
+            "parametrosCapturaFichaPredialcabecera21", "parametrosCapturaFichaPredialcabecera22"
+        ],
           colModel: [
             //{ name: 'Acciones', width: 80, formatter: formatterBotonesEditarCapturaFichaPredial, sortable: false, search: false, exportcol: false },
-            { name: 'nombre_predio', index: 'nombre_predio', width: 150, frozen: true },
+            { name: 'nombre_predio', index: 'nombre_predio', width: 100, frozen: true },
             { name: 'numero_servidumbre', index: 'numero_servidumbre', width: 140, searchoptions: { maxlength: '20' } },
             { name: 'tramo', index: 'tramo', width: 140, searchoptions: { maxlength: '20' } },
             { name: 'nombre_estado_actual', index: 'nombre_estado_actual', width: 110, searchoptions: { maxlength: '20' } },
@@ -38,21 +46,24 @@ var datos_finales = data
             { name: 'codigo_predio', index: 'codigo_predio', hidden: true },
             { name: 'codigo_unidad_grupal', index: 'codigo_unidad_grupal', hidden: true }
            ],
-          ShrinkToFit: true,//ajusta el ancho de las columnas al ancho del grid
+          shrinkToFit: false,//ajusta el ancho de las columnas al ancho del grid
           rowNum: 30,
 		      loadui: 'disable',
 		      loadonce: true,
 		      multiselect: true,
 		      rowList: [30, 50, 100],
-		      sortname: "PK_ID_USUARIO",
 		      viewrecords: true,
 		      sortorder: "asc",
 		      gridview: true,
           caption: 'Users Grid',
-          height:'auto',
+          rowNum: 10,
+          pager: '#pager',
+          autoheight: false,
           autowidth: true,
-          rowNum: 5,
-          pager: '#pager'
+         /* gridComplete: function()
+          {
+           $('#grid').jqGrid('setGridWidth', '1000'); // max width for grid
+          },*/
        });
 
 
